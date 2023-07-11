@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-:aubin {
+:root {
     /*les tirets (--) c'est pour indiquer qu'on a les proprietes customiser*/
     --colorBg: rgb(3, 60, 70); /*used two(-) to declare css custom variable*/
     --colorBgVariant: #3c3c8d;
@@ -34,7 +34,20 @@ body{
     background: var(--colorBg);
     color: var(--colorWhite);
     line-height: 1.6;
+    position: relative;
    /* background-image: url(../src/assets/templates/fond.jpg);*/
+}
+body::before{
+    background-image: url(../src/assets/templates/fond.jpg);
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    position:fixed;
+    background-size: cover;
+    z-index: -1; /* mettre le background image derriere tous les elements de la page et permettre que les liens soient clickables */
 }
 .container{
     width: var(--containerWidth-lg);
@@ -84,7 +97,7 @@ a:hover{
 }
 .btnPrimary{
     background: var(--colorPrimary);
-    color: var(--colorPrimary);
+    color: var(--colorBg);
 }
 img{
     display: block;
