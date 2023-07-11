@@ -10,7 +10,7 @@ import {ImGithub} from 'react-icons/im'
 
 const Header = () => {
   return (
-    <header>
+    <header id='accueil'>
         <div className="container header_container">
         <h5>Salut, Je suis</h5>
         <h1>Aubin SIAHA</h1>
