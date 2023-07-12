@@ -15,7 +15,7 @@
     --colorPrimary: #caff4d;
     --ColorPrimaryVariant:rgba(77, 181, 255, 0.4);
     --colorWhite:#fff;
-    --colorLight:rgba(255,255,255, 0.6);
+    --colorLight:rgba(255, 255, 255, 0.8);
     --containerWidth-lg:75%; /*taille du container qu'on va utiliser dans differentes*/
     --containerWidth-md:86%;/*tailles d'ecrans*/
     --containerWidth-sm:90%;
@@ -39,7 +39,7 @@ body{
 }
 body::before{
     background-image: url(../src/assets/templates/fond.jpg);
-    opacity: 0.4;
+    opacity: 0.3;
     width: 100%;
     height: 100%;
     top: 0;
